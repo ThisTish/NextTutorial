@@ -1,6 +1,6 @@
 
-export const page = () => {
+export const Page = () => {
 	return (
-		<p>customer page</p>
+		<p>Customer Page</p>
 	)
 }
