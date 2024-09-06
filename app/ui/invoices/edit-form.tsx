@@ -15,12 +15,10 @@ export default function EditInvoiceForm({
   invoice,
   customers,
 }: {
-  invoice: InvoiceForm | null;
+  invoice: InvoiceForm;
   customers: CustomerField[];
 }) {
-  if(!invoice){
-    return <p>Loading</p>
-  }
+
 
   console.log(JSON.stringify(invoice))
   const updateInvoiceWithId = updateInvoice.bind(null, invoice.id)
